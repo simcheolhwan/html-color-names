@@ -1,0 +1,90 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+:where(:root) {
+  color-scheme: dark;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+:where(body) {
+  margin: 0;
+}
+
+:where(hr) {
+  border: 0;
+  border-top: 1px solid ButtonBorder;
+}
+
+:where(h1) {
+  font-size: inherit;
+}
+
+:where(h1, p, pre, dl, ol, ul) {
+  margin: 0;
+}
+
+:where(pre, code) {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+:where(pre) {
+  overflow: auto;
+}
+
+:where(strong) {
+  font-weight: bolder;
+}
+
+:where(small) {
+  font-size: 80%;
+}
+
+:where(a) {
+  color: inherit;
+  text-decoration: none;
+}
+
+:where(img, video, input, select, textarea) {
+  height: auto;
+  max-width: 100%;
+}
+
+:where(svg:not([fill])) {
+  fill: currentColor;
+}
+
+:where(table) {
+  border-collapse: collapse;
+  border-color: currentColor;
+}
+
+:where(button, select) {
+  cursor: pointer;
+}
+
+:where(textarea) {
+  resize: vertical;
+}
+
+:where(button, input, select, textarea) {
+  background-color: transparent;
+  border: 1px solid ButtonBorder;
+  color: inherit;
+  font: inherit;
+  padding: 0.25em 0.375em;
+}
+
+::placeholder {
+  color: inherit;
+  opacity: 0.5;
+}
+
+:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
