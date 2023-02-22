@@ -6,6 +6,7 @@ specifiers:
   '@types/react': ^18.0.25
   '@types/react-dom': ^18.0.8
   '@vitejs/plugin-react': ^2.2.0
+  chalk: ^5.2.0
   eslint: ^8.27.0
   eslint-config-react-app: ^7.0.1
   husky: ^8.0.2
@@ -18,6 +19,7 @@ specifiers:
   vite: ^3.2.3
 
 dependencies:
+  chalk: 5.2.0
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
 
@@ -2007,6 +2009,11 @@ packages:
       ansi-styles: 4.3.0
       supports-color: 7.2.0
     dev: true
+
+  /chalk/5.2.0:
+    resolution: {integrity: sha512-ree3Gqw/nazQAPuJJEy+avdl7QfZMcUvmHIKgEZkGL+xOBzRvup5Hxo6LHuMceSxOabuJLJm5Yp/92R9eMmMvA==}
+    engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
+    dev: false
 
   /chokidar/3.5.3:
     resolution: {integrity: sha512-Dr3sfKRP6oTcjf2JmUmFJfeVMvXBdegxB0iVQ5eb2V10uFJUCAS8OByZdVAyVb8xXNz3GjjTgj9kLWsZTqE6kw==}
