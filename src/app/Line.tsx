@@ -1,12 +1,12 @@
 import { PropsWithChildren } from "react"
-import loremIpsum from "../lorem-ipsum"
+import text from "../text"
 import styles from "./Line.module.scss"
 
 interface Props {
   color?: string
 }
 
-const Line = ({ color, children = loremIpsum }: PropsWithChildren<Props>) => {
+const Line = ({ color, children = text }: PropsWithChildren<Props>) => {
   return (
     <pre className={styles.line} style={{ color }}>
       {color?.padEnd(24)}
